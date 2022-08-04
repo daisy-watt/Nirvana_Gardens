@@ -12,13 +12,15 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Image from "./asset/Nirvana_Gardens_Sunlogo.jpg";
+import Image from "./asset/NirvanaGardensSunlogo.jpg";
 // import About from './about';
 // import Services from './services';
 // import Contact from './contact';
 
 const pages = ["About", "Services", "Contact"];
+//const pages = [<a href="./about">About</a>, <a href="./services">Services</a>, <a href="./contact">Contact</a>];
 const settings = ["Home"];
+//const settings = [<a href=".. or root"></a>]
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -59,7 +61,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none"
             }}
           >
-            LOGO
+            Logo
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -132,7 +134,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="NG" src="./asset/Nirvana_Gardens_Sunlogo.jpg" />
+                <Avatar alt="NG" src={Image}/>
               </IconButton>
             </Tooltip>
             <Menu
