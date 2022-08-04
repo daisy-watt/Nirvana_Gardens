@@ -12,7 +12,10 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Image from "./asset/Nirvana_Gardens_Sunlogo.jpg"
+import Image from "./asset/Nirvana_Gardens_Sunlogo.jpg";
+// import About from './about';
+// import Services from './services';
+// import Contact from './contact';
 
 const pages = ["About", "Services", "Contact"];
 const settings = ["Home"];

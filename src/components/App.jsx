@@ -7,7 +7,9 @@ import Footer from './footer';
 import MediaCard from './ResponsiveAppBar';
 import Spininglogo from './spininglogo';
 import ResponsiveAppBar from './ResponsiveAppBar';
-
+import About from './about';
+import Services from './services';
+import Contact from './contact';
 
 const theme = createTheme(
     {
@@ -23,6 +25,15 @@ const theme = createTheme(
     });
 
 console.log(theme)
+
+// const root = ReactDOM.createRoot(
+//     document.getElementById("root")
+//   );
+//   root.render(
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   );
 
 export default function App(){
     return (
