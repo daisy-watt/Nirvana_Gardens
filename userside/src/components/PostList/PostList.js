@@ -6,9 +6,9 @@ import { useSelector } from "react-redux";
 function PostList() {
   const posts = useSelector((state) => state.posts);
 
-  consople.log('posts', posts)
+  console.log('posts', posts);
   return (
-    <Stack spacing={2}>
+    <Stack direction="row" spacing={2}>
         <Post />
         <Post />
     </Stack>
