@@ -1,5 +1,5 @@
 # Nirvana_Gardens
-![NirvanaGardens](/docs/main_1.jpg)
+![NirvanaGardens](./userside/docs/main_1.jpg)
 
 -------------------------- 
 
@@ -63,13 +63,13 @@ The target audience of this website will be clients (business and personal) with
 
 <h1>Dataflow Diagram</h1>
 
-![dataflow](/docs/dataflow_update%20-%20Flowchart.jpeg)
+![dataflow](./userside/docs/dataflow_update%20-%20Flowchart.jpeg)
 
 -------------------------------
 
 <h1>Application Architecture Diagram</h1>
 
-![AppArchitecture](/docs/Application_Architecture_-_T3A2A.jpeg)
+![AppArchitecture](./userside/docs/Application_Architecture_-_T3A2A.jpeg)
 
 ---------------------------------
 
@@ -92,26 +92,26 @@ As a retired person with low mobility, I want to have access to a gardeners serv
 
 <h1>Wireframes and Design</h1>
 
-![moodboard](/docs/canvas_nirvana-gardens-220714_1541.png)
+![moodboard](./userside/docs/canvas_nirvana-gardens-220714_1541.png)
 
-![landing](/docs/Landing_wireframe.jpg)
+![landing](./userside/docs/Landing_wireframe.jpg)
 
-![about](/docs/About_wireframe.jpg)
+![about](./userside/docs/About_wireframe.jpg)
 
-![contact](/docs/Contact_wireframe.jpg)
+![contact](./userside/docs/Contact_wireframe.jpg)
 
-![services](/docs/Services_wireframe.jpg)
+![services](./userside/docs/Services_wireframe.jpg)
 
 ---------------------------------
 
 <h1>Workflow - Trello</h1>
 
-![workflow](/docs/trello4.png)
+![workflow](./userside/docs/trello4.png)
 
-![workflow1](/docs/Screenshot_Trello.jpg)
+![workflow1](./userside/docs/Screenshot_Trello.jpg)
 
-![workflow2](/docs/Screenshot_Trello2.jpg)
+![workflow2](./userside/docs/Screenshot_Trello2.jpg)
 
-![workflow3](/docs/Screenshot_Trello3.jpg)
+![workflow3](./userside/docs/Screenshot_Trello3.jpg)
 
 -------------------------------------------
