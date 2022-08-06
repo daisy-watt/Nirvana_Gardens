@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Image from "./asset/NirvanaGardensSunlogo.jpg";
+import Image from "../asset/NirvanaGardensSunlogo.jpg";
 // import About from './about';
 // import Services from './services';
 // import Contact from './contact';
@@ -45,7 +45,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        <Avatar alt="NG" src={Image} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}/>
           <Typography
             variant="h6"
             noWrap
@@ -61,7 +61,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none"
             }}
           >
-            Logo
+            Nirvana Gardens
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
