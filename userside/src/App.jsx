@@ -16,6 +16,9 @@ const theme = createTheme(
                 main: '#01652F',
             },
         },
+        typography: {
+            fontFamily: 'Roboto',
+        }
 
     });
 

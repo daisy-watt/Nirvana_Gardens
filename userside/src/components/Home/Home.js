@@ -14,6 +14,9 @@ const theme = createTheme(
                 main: '#01652F',
             },
         },
+        typography: {
+            fontFamily: 'Roboto',
+        }
 
     });
 
@@ -25,7 +28,7 @@ const Home = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container>
-                <Stack direction="row" spacing={2} color="common.white">
+                <Stack spacing={2} color="common.white">
                     <PostForm />
                     <PostList />
                 </Stack>

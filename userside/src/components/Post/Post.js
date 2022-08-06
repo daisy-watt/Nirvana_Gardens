@@ -1,8 +1,11 @@
 import React from 'react'
+import Typography from '@mui/material/Typography';
 
 function Post() {
   return (
-    <h1>Post</h1>
+    <Typography variant="h6" gutterBottom component="div">
+        Post
+    </Typography>
   )
 }
 
