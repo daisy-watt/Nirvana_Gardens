@@ -11,6 +11,7 @@ import Stack from '@mui/material/Stack';
 import Image from '../asset/Sunlogo.jpg';
 import IconButton from '@mui/material/IconButton';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
+import SendIcon from '@mui/icons-material/Send';
 
 function PostForm() {
   return (
@@ -31,12 +32,8 @@ function PostForm() {
                 autoComplete="off">
               <Stack direction="row" alignItems="center" spacing={2}>
                 <TextField id="standard-basic" label="write a title" variant="standard" />
-                <Button variant="contained" component="label">
-                  image upload
-                  <input hidden accept="image/*" multiple type="file" />
-                </Button>
                 <IconButton color="primary" aria-label="upload picture" component="label">
-                  <input hidden accept="image/*" type="file" />
+                  <input hidden accept="image/*" multiple type="file" />
                   <PhotoCamera />
                 </IconButton>
               </Stack>
@@ -50,8 +47,8 @@ function PostForm() {
               noValidate
               autoComplete="off">
               <TextField id="outlined-basic" label="here is where you can write about anything you like" variant="outlined" />
-              <Button variant="contained" component="label">
-                  share
+              <Button variant="contained" endIcon={<SendIcon />}>
+                share post
               </Button>
             </Box>
           </CardActions>

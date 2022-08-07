@@ -6,6 +6,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
 import Image from '../asset/Garden.jpg';
 
 function Post() {
@@ -29,7 +31,10 @@ function Post() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" variant="contained" component="label">more info</Button>
+            <IconButton aria-label="delete" color="primary" size="large">
+              <DeleteIcon fontSize="inherit" />
+            </IconButton>
+            <Button size="small" variant="contained" component="label">edit</Button>
           </CardActions>
         </Card>
       </Typography>
