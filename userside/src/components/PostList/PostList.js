@@ -8,7 +8,8 @@ function PostList() {
 
   console.log('posts', posts);
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction="row">
+        <Post />
         <Post />
         <Post />
     </Stack>

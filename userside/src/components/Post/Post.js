@@ -20,17 +20,16 @@ function Post() {
             src={Image}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Post
+            <Typography gutterBottom variant="h5" color="#01652F" component="div">
+              title
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="#01652F">
               this is the conteant area / caption to the imgery Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">A link</Button>
-            <Button size="small">Another Link</Button>
+            <Button size="small" variant="contained" component="label">more info</Button>
           </CardActions>
         </Card>
       </Typography>

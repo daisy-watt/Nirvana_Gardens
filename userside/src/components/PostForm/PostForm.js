@@ -26,11 +26,11 @@ function PostForm() {
             <Box
               component="form"
               sx={{
-                '& > :not(style)': { m: 1}, }}
+                '& > :not(style)': { m: 4}, }}
               noValidate
                 autoComplete="off">
               <Stack direction="row" alignItems="center" spacing={2}>
-                <TextField id="outline-basic" label="title for the post" variant="outlined" />
+                <TextField id="standard-basic" label="write a title" variant="standard" />
                 <Button variant="contained" component="label">
                   image upload
                   <input hidden accept="image/*" multiple type="file" />
