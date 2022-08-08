@@ -18,7 +18,7 @@ function Post() {
           <CardMedia
             component="img"
             alt="garden"
-            height="140"
+            height="100"
             src={Image}
           />
           <CardContent>

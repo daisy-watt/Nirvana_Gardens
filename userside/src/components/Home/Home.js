@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container>
-                <Stack spacing={2} color="common.white">
+                <Stack direction="row" color="common.white" spacing={2}>
                     <PostForm />
                     <PostList />
                 </Stack>

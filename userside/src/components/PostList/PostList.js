@@ -8,7 +8,7 @@ function PostList() {
 
   console.log('posts', posts);
   return (
-    <Stack direction="row">
+    <Stack direction="column" >
         <Post />
         <Post />
         <Post />
