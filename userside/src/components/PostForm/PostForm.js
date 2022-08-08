@@ -35,7 +35,7 @@ function PostForm() {
           <CardMedia
             component="img"
             alt="garden"
-            height="200vh"
+            height="400vh"
             src={Image}/>
           <CardActions>
           <Box
@@ -46,11 +46,11 @@ function PostForm() {
             autoComplete="off"
             >
             <Stack alignItems="center">
-              <TextField id="standard-basic" label="write a title" variant="standard"/>
+              <TextField id="standard-basic" label="write a title" />
               <Button aria-label="upload picture" component="label" endIcon={<PhotoCamera />}>
                 attach picture<input hidden accept="image/*" multiple type="file" />
               </Button>
-              <TextField id="outlined-multiline-flexible" label="here is where you can write about anything you like" rows={8} multiline variant="outlined" />
+              <TextField id="outlined-multiline-flexible" label="here is where you can write about anything you like" rows={8} multiline variant="outlined"/>
               <Button endIcon={<SendIcon />} >
                 share post
               </Button>
