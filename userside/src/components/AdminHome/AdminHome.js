@@ -25,7 +25,7 @@ console.log(theme)
 
 
 
-const Home = () => {
+const AdminHome = () => {
     const dispatch = useDispatch();
 
         useEffect(() => {
@@ -44,4 +44,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default AdminHome;

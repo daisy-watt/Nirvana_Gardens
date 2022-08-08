@@ -9,7 +9,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import ResponsiveAppBar from './components/AppBar/ResponsiveAppBar';
 import BottomBar from './components/BottomBar/BottomBar';
 import Image from "./components/asset/NirvanaGardensSunlogo.jpg";
-import Home from "./components/Home/Home.js";
+import AdminHome from "./components/AdminHome/AdminHome.js";
+import AboutPage from './components/AboutPage/AboutPage';
 
 const theme = createTheme(
     {
@@ -32,21 +33,30 @@ const App = () => {
 
     return (
          <ThemeProvider theme={theme}>
-            <ResponsiveAppBar></ResponsiveAppBar>
-                <Stack direction="column">
-                    <Container maxWidth="100%" sx={{height: '100vh'}}>
-                        <CardMedia
-                            component="img"
-                            alt="logo"
-                            src={Image}/>
-                    </Container>
-                </Stack>
-                {
-    
-                    isAuthenticated
-                    ? <Home />
-                    : <BottomBar text="hi!" onFinished={()=>{setIsAuthenticated(true)}}/>
-                }
+            <Router>
+                <ResponsiveAppBar></ResponsiveAppBar>
+
+                <Routes>
+                    <Route path="/" element={
+                        <Stack direction="column">
+                        <Container maxWidth="100%" sx={{height: '100vh'}}>
+                            <CardMedia
+                                component="img"
+                                alt="logo"
+                                src={Image}/>
+                        </Container>
+                        </Stack>
+                    } />
+                </Routes>
+            
+                <Routes>
+                    <Route path="/" element={<BottomBar text="Jordans admin panel"/>} />
+                    <Route path="admin-panel" element={<AdminHome />} />
+                    <Route path="about" element={<AboutPage />} />
+                    <Route path="services" element={<p>Services </p>} />
+                    <Route path="portfolio" element={<p>portfolio </p>} />
+                </Routes>
+            </Router>
          </ThemeProvider>
 
     )
