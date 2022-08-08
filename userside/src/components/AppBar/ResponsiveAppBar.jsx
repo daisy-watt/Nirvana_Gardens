@@ -42,7 +42,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <Avatar alt="NG" src={Image} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}/>
