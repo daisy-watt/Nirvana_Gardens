@@ -1,4 +1,4 @@
-import Home from "./Home";
+import AdminHome from "./AdminHome.js";
 import { memo } from "react";
 
-export default memo (Home);
+export default memo (AdminHome);

@@ -19,7 +19,7 @@ export default function BottomBar(props) {
       <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
         <Toolbar>
           <Box sx={{ flexGrow: 1 }} />
-          <Link to="/admin-panel">
+          <Link to="/admin">
             <Button variant="contained" size="small" onClick={props.onFinished}>
               {props.text}
               </Button>   

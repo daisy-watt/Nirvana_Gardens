@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.json({ limit: "32mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
 app.use(cors());
-app.use("/posts", postsRoutes);
+app.use("/api", postsRoutes);
 
 const MONGO_URI = "mongodb+srv://daisywatt:23Gardenia@cluster0.qn1qinl.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5001;

@@ -39,7 +39,7 @@ const ResponsiveAppBar = () => {
                     mr: 2,
                     display: { xs: "none", md: "flex" },
                     fontFamily: "monospace",
-                    fontWeight: 700,
+                    fontWeight: 900,
                     letterSpacing: ".2rem",
                     color: "inherit",
                     textDecoration: "none"
@@ -57,14 +57,13 @@ const ResponsiveAppBar = () => {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 color="inherit"
-              >
-                <MenuIcon />
+              > <Avatar alt="NG" src={Image} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}/>
               </IconButton>
             </Link>
           </Box>
       
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href=""

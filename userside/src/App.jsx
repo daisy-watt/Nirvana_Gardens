@@ -51,7 +51,7 @@ const App = () => {
             
                 <Routes>
                     <Route path="/" element={<BottomBar text="Jordans admin panel"/>} />
-                    <Route path="admin-panel" element={<AdminHome />} />
+                    <Route path="admin" element={<AdminHome />} />
                     <Route path="about" element={<AboutPage />} />
                     <Route path="services" element={<p>Services </p>} />
                     <Route path="portfolio" element={<p>portfolio </p>} />

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch } from "react-redux";
+import { createPosts } from '../../actions/posts';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -9,29 +11,38 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import SendIcon from '@mui/icons-material/Send';
-
-// import FileBase64 from "react-file-base64";
+import FileBase64 from "react-file-base64";
 
 import Image from '../asset/Sunlogo.jpg';
 
 function PostForm() {
-
-  // THIS IS UDEMY GUYS with the other library
+  const dispatch = useDispatch();
   // const [form] = Form.useForm();
-  const onSubmit = () => {
+
+    // title: { type: String, required: true },
+    // image: { type: String, required: true },
+    // caption: { type: String, required: true },
+    // postDate: { type: Date, default: new Date() },
   
-    
-  };
 
-// this is INSTEAD of base64 package <input hidden accept="image/*" multiple type="file"
+  const onSubmit = async () => {
 
+    const data = {
+      "title": "Post from user",
+      "image": "dsflkjhglskjfhdglk",
+      "caption": "fuck my life"
+    };
 
-  // this is muis version of state use value={value} onChange={handleChange} in component tags
-  // const [value, setValue] = React.useState('Controlled');
+    const res = await fetch('http://localhost:5001/api/createPost', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
 
-  // const handleChange = (event) => {
-  //   setValue(event.target.value);
-  // };
+    console.log(res)
+  }
 
   return (
     <Typography variant="h6" component="div" >
@@ -42,8 +53,9 @@ function PostForm() {
             alt="garden"
             height="400vh"
             src={Image}/>
-          <CardActions>
+          <CardActions >
           <Box
+            // form={form}
             component="form"
             sx={{
               '& .MuiTextField-root': { m: 1, width: '50vh' },}}
@@ -52,17 +64,19 @@ function PostForm() {
             >
             <Stack alignItems="center">
               <TextField id="standard-basic" label="write a title" />
-              <Button aria-label="upload picture" component="label" endIcon={<PhotoCamera />}>
-                attach picture
-                {/* <FileBase64 
+              <Button aria-label="upload picture" component="label" startIcon={<PhotoCamera />} >attach 
+                <FileBase64 
                   type="file"
-                  multiple={false}
-                  onDone={(e) => { 
+                  multiple={false} 
+                  onDone={(e) => {
+                    form.setFieldsValue({
+                      image: e.base64
+                    })
                   }}
-                /> */}
+                />
               </Button>
               <TextField id="outlined-multiline-flexible" label="here is where you can write about anything you like" rows={6} multiline variant="outlined"/>
-              <Button endIcon={<SendIcon />} >
+              <Button endIcon={<SendIcon />} onClick={onSubmit}>
                 share post
               </Button>
             </Stack> 
