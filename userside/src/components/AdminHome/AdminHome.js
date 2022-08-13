@@ -72,7 +72,6 @@ const AdminHome = () => {
                                           setIsLoggedIn(resJSON.isCorrectCode)
                                     }
                                 }/>
-                                <PostList isLoggedIn={isLoggedIn} />
                             </Stack>
                         )
                     }
