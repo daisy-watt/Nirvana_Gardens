@@ -10,7 +10,12 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Image from '../asset/Garden.jpg';
 
-function Post() {
+function Post(props) {
+
+  // image is currently a base 64 string
+  // we need to turn that to url
+
+
   return (
   <Container>
       <Typography variant="h6" gutterBottom component="div">
@@ -19,23 +24,41 @@ function Post() {
             component="img"
             alt="garden"
             height="100"
-            src={Image}
+            src={props.image}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" color="#01652F" component="div">
-              title
+             { props.title }
             </Typography>
             <Typography variant="body2" color="#01652F">
-              this is the conteant area / caption to the imgery Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+              { props.caption }
             </Typography>
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="delete" color="primary" size="large">
-              <DeleteIcon fontSize="inherit" />
-            </IconButton>
-            <Button size="small" variant="contained" component="label">edit</Button>
-          </CardActions>
+          {
+            props.isLoggedIn
+            ? (
+            <CardActions>
+              <IconButton aria-label="delete" color="primary" size="large" onClick={async () => {
+                const data = {
+                  "id": props.id
+                };
+            
+                const res = await fetch('http://localhost:5001/api/deletePost', {
+                  method: 'DELETE',
+                  body: JSON.stringify(data),
+                  headers: {
+                    'Content-Type': 'application/json'
+                  }
+                });
+              }}>
+                <DeleteIcon fontSize="inherit" />
+              </IconButton>
+              <Button size="small" variant="contained" component="label">edit</Button>
+            </CardActions>
+            )
+            : (<React.Fragment/>)
+          }
+          
         </Card>
       </Typography>
   </Container>

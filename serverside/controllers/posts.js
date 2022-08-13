@@ -22,8 +22,7 @@ const createPost = async (req, res) => {
         title: body.title,
         image: body.image,
         caption: body.caption
-        
-        //...body 
+  
     });
 
     try {
@@ -34,5 +33,12 @@ const createPost = async (req, res) => {
     }
 
 }
+const deletePost = async (req, res) => {
+    const body = req.body;
+    await Post.deleteOne({ _id: body.id })
+    res.status(200).send()
 
-export { getPosts, createPost };
+
+}
+
+export { getPosts, createPost, deletePost };

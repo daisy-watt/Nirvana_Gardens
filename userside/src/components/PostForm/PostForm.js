@@ -17,20 +17,18 @@ import Image from '../asset/Sunlogo.jpg';
 
 function PostForm() {
   const dispatch = useDispatch();
-  // const [form] = Form.useForm();
 
-    // title: { type: String, required: true },
-    // image: { type: String, required: true },
-    // caption: { type: String, required: true },
-    // postDate: { type: Date, default: new Date() },
   
+    const [title, setTitle] = React.useState('');
+    const [image, setImage] = React.useState('');
+    const [caption, setCaption] = React.useState('');
 
   const onSubmit = async () => {
 
     const data = {
-      "title": "Post from user",
-      "image": "dsflkjhglskjfhdglk",
-      "caption": "fuck my life"
+      "title": title,
+      "image": image,
+      "caption": caption
     };
 
     const res = await fetch('http://localhost:5001/api/createPost', {
@@ -41,7 +39,9 @@ function PostForm() {
       }
     });
 
-    console.log(res)
+    setTitle('');
+    setImage('');
+    setCaption('');
   }
 
   return (
@@ -63,19 +63,30 @@ function PostForm() {
             autoComplete="off"
             >
             <Stack alignItems="center">
-              <TextField id="standard-basic" label="write a title" />
-              <Button aria-label="upload picture" component="label" startIcon={<PhotoCamera />} >attach 
+              <TextField id="standard-basic" label="write a title" value={title} onChange={
+                (event) => {
+                    setTitle(event.target.value);
+                }
+              }/>
+              <Button aria-label="upload picture" component="label" startIcon={<PhotoCamera />} > 
                 <FileBase64 
                   type="file"
                   multiple={false} 
                   onDone={(e) => {
-                    form.setFieldsValue({
-                      image: e.base64
-                    })
+                      setImage(e.base64)
                   }}
                 />
               </Button>
-              <TextField id="outlined-multiline-flexible" label="here is where you can write about anything you like" rows={6} multiline variant="outlined"/>
+              <TextField id="outlined-multiline-flexible" label="here is where you can write about anything you like" 
+                  rows={6} 
+                  multiline 
+                  variant="outlined"
+                  value={caption}
+                  onChange={
+                    (event) => {
+                      setCaption(event.target.value)
+                    }
+                  } />
               <Button endIcon={<SendIcon />} onClick={onSubmit}>
                 share post
               </Button>

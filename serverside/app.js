@@ -6,6 +6,7 @@ import cors from 'cors';
 
 // local files
 import postsRoutes from './routes/posts.js';
+import accessRoutes from './routes/access.js'
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(bodyParser.json({ limit: "32mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
 app.use(cors());
 app.use("/api", postsRoutes);
+app.use("/api", accessRoutes);
 
 const MONGO_URI = "mongodb+srv://daisywatt:23Gardenia@cluster0.qn1qinl.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5001;
