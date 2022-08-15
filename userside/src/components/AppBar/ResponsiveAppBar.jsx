@@ -93,10 +93,10 @@ const ResponsiveAppBar = () => {
                 SERVICES
               </Button> 
             </Link> 
-            <Link to="/portfolio">
+            <Link to="/work">
               <Button
                 sx={{ my: 2, color: "white", display: "block" }}>
-                PORTFOLIO
+                work
               </Button> 
             </Link> 
           </Box>

@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import PostList from "../PostList";
 import PostForm from "../PostForm";
 import Container from "@mui/material/Container";
+import Box from '@mui/material/Box';
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -39,7 +40,8 @@ const AdminHome = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Container>
+            <Container color="inherit">
+            <Box color="inherit" />
                     {
                         isLoggedIn
                         ? (
@@ -49,9 +51,9 @@ const AdminHome = () => {
                             </Stack>
                         )
                         : (
-                            <Stack>
+                            <Stack direction="column" alignItems="center">
                                 <TextField value={code} onChange={(event)=>{setCode(event.target.value)}}/>
-                                <Button onClick={
+                                <Button variant="contained" onClick={
                                     async ()=>
                                     {
                                         const data = {
@@ -71,7 +73,7 @@ const AdminHome = () => {
 
                                           setIsLoggedIn(resJSON.isCorrectCode)
                                     }
-                                }/>
+                                }> magic number</Button>
                             </Stack>
                         )
                     }

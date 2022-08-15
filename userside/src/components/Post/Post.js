@@ -53,7 +53,7 @@ function Post(props) {
               }}>
                 <DeleteIcon fontSize="inherit" />
               </IconButton>
-              <Button size="small" variant="contained" component="label">edit</Button>
+              
             </CardActions>
             )
             : (<React.Fragment/>)
