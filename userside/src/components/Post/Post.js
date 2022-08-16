@@ -15,6 +15,7 @@ function Post(props) {
   // image is currently a base 64 string
   // we need to turn that to url
 
+  //props.onSubmitted(); 
 
   return (
   <Container>
@@ -50,6 +51,8 @@ function Post(props) {
                     'Content-Type': 'application/json'
                   }
                 });
+
+                props.onDelete()
               }}>
                 <DeleteIcon fontSize="inherit" />
               </IconButton>

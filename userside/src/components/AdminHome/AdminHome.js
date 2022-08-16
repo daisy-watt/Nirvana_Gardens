@@ -14,6 +14,10 @@ import { getPosts } from "../../actions/posts"
 const theme = createTheme(
     {
         palette: {
+            background: {
+                default: '#01652F'
+            },
+
             primary: {
                 main: '#01652F',
             },
@@ -33,6 +37,12 @@ const AdminHome = () => {
 
     const [isLoggedIn, setIsLoggedIn] = React.useState(false);
     const [code, setCode] = React.useState('');
+    const [LastRefreshTime, setLastRefreshTime] = React.useState(Date.now())
+
+    const onFormSubmitted = () => {
+    console.log('form was submitted');
+    setLastRefreshTime(Date.now())
+    }
 
         // useEffect(() => {
         //     dispatch(getPosts());
@@ -46,8 +56,8 @@ const AdminHome = () => {
                         isLoggedIn
                         ? (
                             <Stack direction="row" color="common.white" spacing={2}>
-                                <PostForm />
-                                <PostList isLoggedIn={isLoggedIn} />
+                                <PostForm onSubmitted={onFormSubmitted} />
+                                <PostList isLoggedIn={isLoggedIn} LastRefreshTime={LastRefreshTime}/>
                             </Stack>
                         )
                         : (
@@ -76,9 +86,9 @@ const AdminHome = () => {
                                 }> magic number</Button>
                             </Stack>
                         )
-                    }
-                    
+                    }  
             </Container>
+
         </ThemeProvider>
     )
 }

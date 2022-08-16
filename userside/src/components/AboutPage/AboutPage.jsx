@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Image from '../asset/Garden.jpg';
 
+
 export default function AboutPage(){
     return (
     <Container color="#01652F">

@@ -15,7 +15,7 @@ import FileBase64 from "react-file-base64";
 
 import Image from '../asset/Sunlogo.jpg';
 
-function PostForm() {
+function PostForm(props) {
   const dispatch = useDispatch();
 
   
@@ -42,6 +42,8 @@ function PostForm() {
     setTitle('');
     setImage('');
     setCaption('');
+
+    props.onSubmitted();
   }
 
   return (

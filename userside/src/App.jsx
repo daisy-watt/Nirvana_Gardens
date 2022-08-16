@@ -61,9 +61,8 @@ const App = () => {
                     <Route path="about" element={<AboutPage />} />
                     <Route path="services" element={<Services/>} />
                     <Route path="work" element={<WorkPosts />} />
-
-                    // make a component/page for the routes that only render the p tag content
                 </Routes>
+                
             </Router>
          </ThemeProvider>
 
