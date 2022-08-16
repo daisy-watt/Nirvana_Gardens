@@ -1,4 +1,5 @@
 import React from 'react';
+import { CssBaseline } from '@mui/material/';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
@@ -24,7 +25,7 @@ function Post(props) {
           <CardMedia
             component="img"
             alt="garden"
-            height="100"
+            height="200"
             src={props.image}
           />
           <CardContent>

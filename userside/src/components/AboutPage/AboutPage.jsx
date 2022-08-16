@@ -9,7 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Image from '../asset/Garden.jpg';
+import Image from '../asset/jordan.jpg';
 
 
 export default function AboutPage(){
@@ -18,36 +18,37 @@ export default function AboutPage(){
         <Card >
             <Stack direction="row">
                 <Typography variant="h6" gutterBottom component="div">
-                <CardContent>
-                    <Typography gutterBottom variant="h5" color="#01652F" component="div">
-                    Nirvana Gardens - by jordan saul
-                    </Typography>
-                    <Typography variant="body2" color="#01652F">
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" color="#01652F" component="div">
+                         jordan saul
+                        </Typography>
+                        <Typography variant="body2" color="#01652F">
+                        <p>
+                        Australia is world renowned for its high quality fruits, grains and vegetables. Australia’s $8 billion horticulture industry is significant and diverse, with an expanding market and a need for skilled workers. 
+                        </p>
+                        // this is where we talk about jordan
+                        - background (grew up in...)
+                        - specialisation (area of expertise)
+                        - special interest in: regen with native plants (fixing and healing land - first nations led)
+                        // this is where we talk about jordan
+                        - background (grew up in...)
+                        - specialisation (area of expertise)
+                        - special interest in: regen with native plants (fixing and healing land - first nations led)
 
-                    // this is where we talk about jordan
-                    - background (grew up in...)
-                    - specialisation (area of expertise)
-                    - special interest in: regen with native plants (fixing and healing land - first nations led)
-                    // this is where we talk about jordan
-                    - background (grew up in...)
-                    - specialisation (area of expertise)
-                    - special interest in: regen with native plants (fixing and healing land - first nations led)
-                    </Typography>
-                </CardContent>
+                        </Typography>
+                    </CardContent>
                 </Typography>
                 <CardMedia
                     component="img"
                     alt="garden"
-                    height="600"
+                    height="400"
                     src={Image}
-
-                    // get image here for the bio - maybe look at another alternative layout 
                 />
             </Stack>
         </Card>
+
         
     </Container>
-    // should we see posts here? like that whole post function that is build - is it viewable here or maybe social links here?
 
     )
 }

@@ -20,7 +20,7 @@ export default function BottomBar(props) {
         <Toolbar>
           <Box sx={{ flexGrow: 1 }} />
           <Link to="/admin">
-            <Button variant="contained" size="small" onClick={props.onFinished}>
+            <Button variant="outlined" size="small"  onClick={props.onFinished} sx={{ color: "white"}}>
               {props.text}
               </Button>   
             </Link>         

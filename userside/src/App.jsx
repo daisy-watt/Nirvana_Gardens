@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CssBaseline } from '@mui/material/';
 import Container from '@mui/material/Container';
 import CardMedia from '@mui/material/CardMedia';
 import Stack from "@mui/material/Stack"
@@ -19,10 +20,10 @@ const theme = createTheme(
         palette: {
             primary: {
                 main: '#01652F',
-                bgcolor: '#cfe8fc'
             },
+            backgroundcolor: '#01652F',
+
         },
-        bgcolor: '#cfe8fc',
 
         typography: {
             fontFamily: 'Roboto',
@@ -37,6 +38,7 @@ const App = () => {
      const [isAuthenticated, setIsAuthenticated] = React.useState(false);
 
     return (
+        <CssBaseline>
          <ThemeProvider theme={theme} >
             <Router>
                 <ResponsiveAppBar></ResponsiveAppBar>
@@ -44,12 +46,12 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={
                         <Stack direction="column">
-                        <Container maxWidth="100%" sx={{height: '100vh'}}>
+                        <Container maxWidth="100%" sx={{height: '100vh', backgroundcolor: '#01652F'}}>
                             <CardMedia
                                 component="img"
                                 alt="logo"
                                 src={Image}
-                                sx={{ bgcolor: '#cfe8fc', height: '100vh' }}/>
+                                sx={{ bgcolor: '#01652F', height: '100vh' }}/>
                         </Container>
                         </Stack>
                     } />
@@ -61,10 +63,12 @@ const App = () => {
                     <Route path="about" element={<AboutPage />} />
                     <Route path="services" element={<Services/>} />
                     <Route path="work" element={<WorkPosts />} />
+
                 </Routes>
                 
             </Router>
          </ThemeProvider>
+        </CssBaseline>
 
     )
 
