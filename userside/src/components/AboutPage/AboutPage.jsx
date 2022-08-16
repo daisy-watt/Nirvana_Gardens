@@ -73,6 +73,7 @@ export default function AboutPage(){
                         contact
                     </Typography>
                     <TextField id="standard-basic" label="your name"  />
+                    <TextField id="standard-basic" label="your email"  />
 
                     <TextField id="outlined-multiline-flexible" label="ask anything you like" 
                         rows={6} 

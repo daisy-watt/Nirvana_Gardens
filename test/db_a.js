@@ -19,7 +19,7 @@ const connectDB = async () => {
             { 
                 title: 'Post1',
                 image: 'dsflkjhglskjfhdglk',
-                caption: 'fuck my life'
+                caption: 'testing database'
             });
         await a.save();
         console.log('saved a to database');
