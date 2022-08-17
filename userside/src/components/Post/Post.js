@@ -45,7 +45,7 @@ function Post(props) {
                   "id": props.id
                 };
             
-                const res = await fetch('http://localhost:5001/api/deletePost', {
+                const res = await fetch('http://localhost:5002/api/deletePost', {
                   method: 'DELETE',
                   body: JSON.stringify(data),
                   headers: {

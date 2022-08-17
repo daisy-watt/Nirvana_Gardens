@@ -31,7 +31,7 @@ function PostForm(props) {
       "caption": caption
     };
 
-    const res = await fetch('http://localhost:5001/api/createPost', {
+    const res = await fetch('http://localhost:5002/api/createPost', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

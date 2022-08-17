@@ -9,7 +9,7 @@ import Button from "@mui/material/Button"
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import ResponsiveAppBar from './components/AppBar/ResponsiveAppBar';
 import BottomBar from './components/BottomBar/BottomBar';
-import Image from "./components/asset/NirvanaGardensSunlogo.jpg";
+import Image from "./components/asset/Sunlogowhite.png";
 import AdminHome from "./components/AdminHome/AdminHome.js";
 import AboutPage from './components/AboutPage/AboutPage';
 import Services from './components/Services/Services';
@@ -22,12 +22,15 @@ const theme = createTheme(
                 main: '#01652F',
             },
             backgroundcolor: '#01652F',
-
+            background:
+            {
+                default: '#01652F'
+            }
         },
 
         typography: {
             fontFamily: 'Roboto',
-        }
+        },
 
     });
 
@@ -45,14 +48,13 @@ const App = () => {
 
                 <Routes>
                     <Route path="/" element={
-                        <Stack direction="column">
-                        <Container maxWidth="100%" sx={{height: '100vh', backgroundcolor: '#01652F'}}>
+                        <Stack direction="row" justifyContent="center" alignItems="center" height="100%" marginTop="40px">
                             <CardMedia
                                 component="img"
                                 alt="logo"
                                 src={Image}
-                                sx={{ bgcolor: '#01652F', height: '100vh' }}/>
-                        </Container>
+                                sx={{ bgcolor: '#01652F', width: '300px', height: '300px', animation: "spin 10s linear infinite"}}
+                            />
                         </Stack>
                     } />
                 </Routes>

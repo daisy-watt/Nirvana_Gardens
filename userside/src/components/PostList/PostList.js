@@ -10,7 +10,7 @@ function PostList(props) {
 
   const Refresh = () => {
     console.log('refresh');
-    fetch('http://localhost:5001/api/getPosts')
+    fetch('http://localhost:5002/api/getPosts')
     .then(async (res) => {
       setPosts(await res.json())
       setLastPostUpdateTime(Date.now())

@@ -48,7 +48,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky">
       <Container maxWidth="sm">
         <Toolbar disableGutters>
-        <Avatar alt="NG" src={Image} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}/>
+        <Avatar alt="NG" src={Image} sx={{ display: { xs: "flex", md: "flex" }, mr: 1, animation: "spin 10s linear infinite" }}/>
         
           <Link to="/">
               <Button
@@ -60,7 +60,7 @@ const ResponsiveAppBar = () => {
                   component="a"
                   sx={{
                     mr: 2,
-                    display: { xs: "none", md: "flex" },
+                    display: { xs: "flex", md: "flex" },
                     fontFamily: "monospace",
                     fontWeight: 900,
                     letterSpacing: ".2rem",
@@ -72,18 +72,6 @@ const ResponsiveAppBar = () => {
                 </Typography>
               </Button> 
             </Link> 
-          <Box sx={{ flexGrow: 1, color: "white", display: { xs: "flex", md: "none" } }}>
-            <Link to="/">
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                color="inherit"
-              > <Avatar alt="NG" src={Image} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}/>
-              </IconButton>
-            </Link>
-          </Box>
       
           <Typography
             variant="h6"
@@ -92,7 +80,7 @@ const ResponsiveAppBar = () => {
             href=""
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none", color: "green" },
+              display: { xs: "flex", md: "none"},
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,
@@ -174,9 +162,9 @@ const ResponsiveAppBar = () => {
             textDecoration: 'none',
           }}
         > */}
-            Nirvana Gardens
+            
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
             <Link to="/about">
               <Button
                 sx={{ my: 2, color: "white", display: "block" }}>

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const MONGO_URI = "mongodb+srv://daisywatt:23Gardenia@cluster0.qn1qinl.mongodb.net/?retryWrites=true&w=majority";
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5002;
 
 const connectDB = async () => {
     

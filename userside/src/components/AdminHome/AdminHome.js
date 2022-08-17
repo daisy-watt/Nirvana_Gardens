@@ -70,7 +70,7 @@ const AdminHome = () => {
                                             "code": code,
                                           };
                                       
-                                          const res = await fetch('http://localhost:5001/api/isCorrectCode', {
+                                          const res = await fetch('http://localhost:5002/api/isCorrectCode', {
                                             method: 'POST',
                                             body: JSON.stringify(data),
                                             headers: {

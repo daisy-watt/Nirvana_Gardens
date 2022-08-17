@@ -71,7 +71,7 @@ export default function Services() {
                                         <TableCell align="left">{row.detail}</TableCell>
 
                                         </TableRow>
-                                    ))}
+                                    ))} 
                                     </TableBody>
                                 </Table>
                             </TableContainer>

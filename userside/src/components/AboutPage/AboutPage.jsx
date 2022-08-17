@@ -45,7 +45,7 @@ export default function AboutPage(){
                 <CardMedia
                     component="img"
                     alt="garden"
-                    height="400"
+                    height="300"
                     src={Image}
                 />
             </Stack>
@@ -81,7 +81,7 @@ export default function AboutPage(){
                         variant="outlined"
                         />
                     <Button >
-                        get in touch
+                        send
                     </Button>
                     </Stack> 
                 </Box>

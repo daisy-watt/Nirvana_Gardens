@@ -11,30 +11,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
-        <style>
-            /* {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
-            *
-            {
-                font-family: 'Synt';
-                src: url('./ABCSynt-Regular-Trial.woff') format('woff');
-            }
-            .DragII 
-            {
-            display: flex;
-            flex-direction: column;
-            user-select: none;
-            }
-
-            svg 
-            {
-            margin: 1rem 0;
-            cursor: crosshair;
-            } */
-        </style>
     </head>
     <body>
         <noscript>
@@ -44,5 +20,14 @@
             <!-- This div is where our app will run -->
         </div>
         <script src="index.bundle.js"></script>
+
+        <style>
+            @keyframes spin { 
+                100% { 
+                    -webkit-transform: rotate(360deg); 
+                    transform:rotate(360deg); 
+                } 
+            }
+        </style>
     </body>
 </html>
