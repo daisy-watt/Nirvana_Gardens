@@ -3,6 +3,11 @@
 
 -------------------------- 
 
+[Nirvana Gardens](https://desolate-shelf-45706.herokuapp.com/)
+[Server](https://young-plains-02409.herokuapp.com/)
+
+-------------------------- 
+
 <h1>Purpose</h1>
 
 To create an joyful but official landing for the landscaping business, Nirvana Gardens. This “digital garden” will allow customers, potential and existing, to find information regarding the business and act as a portfolio for the emerging landscape design side to the business.
@@ -54,7 +59,6 @@ The target audience of this website will be clients (business and personal) with
 - React (Open source front end library for building UI components)
 - Node.js (Open-source cross-platform back-end JavaScript runtime environment)
 - Heroku (Cloud based deployment platform)
-- Netlify (Cloud based deployment platform)
 - GitHub (Version control hosting)
 - Trello (Workflow Management)
 - VS code (Text Editor)
