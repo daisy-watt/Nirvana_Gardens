@@ -118,6 +118,12 @@ As a retired person with low mobility, I want to have access to a gardeners serv
 
 ![workflow3](./userside/docs/Screenshot_Trello3.jpg)
 
+![workflow4](./userside/docs/Screenshot_Trello4.jpg)
+
+![workflow5](./userside/docs/Screenshot_Trello5.jpg)
+
+![workflow6](./userside/docs/Screenshot_Trello6.jpg)
+
 -------------------------------------------
 
 <h1> User Testing </h1>
