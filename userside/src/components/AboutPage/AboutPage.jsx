@@ -28,7 +28,7 @@ export default function AboutPage(){
                         </Typography>
                         <Typography variant="body2" color="#01652F">
                         <p>
-                        Jordan is an emerging horticulturist, whos lived in naarm / melbourne for the last 7 years. He spent most of his youth growing in the then small town of lenoxheads just outside of byron before moving south. Jordan has a speial interest in reforestation and companion planting, with a native plant focus and advocate for first nations led education on healing land. After completing a diploma in horticulture in 2018, jordan has been practicing home garden design, care and maintenance with more recently branching into commerical clients in hospitality. get in touch if you have some work youd like jordans help with.
+                        Jordan is an emerging horticulturist, whos lived in naarm / melbourne for the last 7 years. He spent most of his youth growing in the then small town of lenoxheads just outside of byron before moving south. Jordan has a special interest in reforestation and companion planting, with a native plant focus and advocate for first nations led education on healing land. After completing a diploma in horticulture in 2018, jordan has been practicing home garden design, care and maintenance with more recently branching into commerical clients in hospitality. get in touch if you have some work youd like jordans help with.
                         </p>
 
                         </Typography>

@@ -9,6 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -39,11 +40,31 @@ createData('Hospitality', 'Site Specific weeding, watering and maintenance.'),
 createData('Residential', 'Home maintenance, mowing, weeding, pruning amd regen.'),
 ];
 
+const theme = createTheme(
+    {
+        palette: {
+            primary: {
+                main: '#01652F',
+            },
+            backgroundcolor: '#01652F',
+            background:
+            {
+                default: '#01652F'
+            }
+        },
 
+        typography: {
+            fontFamily: 'Roboto',
+        },
+
+    });
+
+console.log(theme)
 
 export default function Services() {
 
     return (
+<ThemeProvider theme={theme} >
     <Container color="#01652F">
         <Typography variant="h6" gutterBottom component="div">
             <Stack direction="row">
@@ -119,5 +140,6 @@ export default function Services() {
             </Stack>
         </Typography>
     </Container>
+</ThemeProvider>
     )
 }
