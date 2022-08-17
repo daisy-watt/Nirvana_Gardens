@@ -27,16 +27,16 @@ const rows = [
 createData('Consulting'),
 createData('Sourcing'),
 createData('Commercial', 'Business / Retail consulting and application.'),
-createData('Hospitality', 'Site Specific consulting and maintainace.'),
-createData('Residential', 'Home update consulting and maintainace.'),
+createData('Hospitality', 'Site specific consulting and maintenance.'),
+createData('Residential', 'Home update consulting and maintenance.'),
 ];
 
 const rows2 = [
 createData('One off Care'),
 createData('Regular Care'),
-createData('Commercial', 'irrigation, pruning upkeep.'),
-createData('Hospitality', 'Site Specific weeding, watering and maintainace.'),
-createData('Residential', 'Home maintainace, mowing, weeding, pruning amd regen.'),
+createData('Commercial', 'Irrigation, pruning upkeep.'),
+createData('Hospitality', 'Site Specific weeding, watering and maintenance.'),
+createData('Residential', 'Home maintenance, mowing, weeding, pruning amd regen.'),
 ];
 
 
@@ -89,7 +89,7 @@ export default function Services() {
                         height="70"
                         src={Image2}/>
                     <Typography gutterBottom variant="h6" color="#01652F" component="div">
-                   Care + Maintanance
+                   Care + Maintenance
                     </Typography>
                         <TableContainer component={Paper}>
                             <Table  aria-label="simple table">
