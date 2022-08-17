@@ -115,3 +115,24 @@ As a retired person with low mobility, I want to have access to a gardeners serv
 ![workflow3](./userside/docs/Screenshot_Trello3.jpg)
 
 -------------------------------------------
+
+<h1> User Testing </h1>
+
+A sample size of 10 people were used in conducting User testing/research when designing and implementing functions within the website.
+The tests utilised for Nirvana Gardens was A/B testing and a Card sort/ranking to help identify which features were most important to our client's prospective customers and best liked. 
+
+An A/B test was conducted to find the most ideal UI features. To not overwhelm our participants, we provided limited options (typically two but no more than three) so that they could choose their preferred options. Collaboratively with our client, where there were little to no difference, our client's opinion was weighed significantly higher. This test assisted in finalising the presentation/front end of the website.
+
+A Card sort/ranking test was conducted to find the most important UX features. With six options, with a 1 denoting most important and a 6 denoting least important, participants ranked what they felt was the most important feature to them. Similar to A/B testing, where differences were minute, client opinion was prioritised. This test assisted in allocating resources to the development of these features.
+
+Finally, we asked our research group their final opinions, which was mostly positive. This process highlighted how well received our client's vision was, allowing us to adapt the process throughout development and implementation, resulting in a product that both meets our client's needs/expectations and appeals to the customer.
+
+Attached below are screenshots of collated responses.
+
+![User demographics](./userside/docs/User%20Demographic.png)
+
+![User A/B Testing](./userside/docs/User%20A%3AB.png)
+
+![User Card/Ranking Sort](./userside/docs/User%20Card%20Sort.png)
+
+![User Feedback](./userside/docs/User%20Feedback.png)
