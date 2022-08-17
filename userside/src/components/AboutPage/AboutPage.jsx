@@ -28,16 +28,8 @@ export default function AboutPage(){
                         </Typography>
                         <Typography variant="body2" color="#01652F">
                         <p>
-                        Australia is world renowned for its high quality fruits, grains and vegetables. Australia’s $8 billion horticulture industry is significant and diverse, with an expanding market and a need for skilled workers. 
+                        Jordan is an emerging horticulturist, whos lived in naarm / melbourne for the last 7 years. He spent most of his youth growing in the then small town of lenoxheads just outside of byron before moving south. Jordan has a speial interest in reforestation and companion planting, with a native plant focus and advocate for first nations led education on healing land. After completing a diploma in horticulture in 2018, jordan has been practicing home garden design, care and maintenance with more recently branching into commerical clients in hospitality. get in touch if you have some work youd like jordans help with.
                         </p>
-                        // this is where we talk about jordan
-                        - background (grew up in...)
-                        - specialisation (area of expertise)
-                        - special interest in: regen with native plants (fixing and healing land - first nations led)
-                        // this is where we talk about jordan
-                        - background (grew up in...)
-                        - specialisation (area of expertise)
-                        - special interest in: regen with native plants (fixing and healing land - first nations led)
 
                         </Typography>
                     </CardContent>

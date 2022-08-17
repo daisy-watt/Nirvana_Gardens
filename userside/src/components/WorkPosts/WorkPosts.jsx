@@ -29,8 +29,7 @@ export default function WorkPosts(){
                     portfolio of work
                     </Typography>
                         <Typography variant="body2" color="#01652F">
-                        here is a load of text about this really cute garden 
-                        here is a load of text about this really cute garden
+                    here are some of the latest works by Nirvana Gardens
                     <CardMedia
                     component="img"
                     alt="garden"

@@ -23,18 +23,30 @@ export default function BottomBar(props) {
           
       
         <Toolbar>
-          <Box sx={{ flexGrow: 1 }} />
-            <MLink target="_blank" href='http://www.google.com'>
-              <Button variant="outlined" size="large" startIcon={<InstagramIcon/>} sx={{ color: "white"}}>
-              </Button>
-            </MLink>
-          <Link to="/admin">
-            <Button variant="outlined" size="small"  onClick={props.onFinished} sx={{ color: "white"}}>
-              {props.text}
-              </Button>   
-            </Link>
-                   
+          <Stack direction="row" justifyContent="flex-start" >
+            <Box sx={{ flexGrow: 1 }} />
+              <MLink target="_blank" href='https://www.instagram.com/nirvanagardensnorthcote/'>
+                <Button variant="outlined" size="large" startIcon={<InstagramIcon/>} sx={{ color: "white"}}>
+                </Button>
+              </MLink>
+              <MLink target="_blank" href='https://twitter.com/home'>
+                <Button variant="outlined" size="large" startIcon={<TwitterIcon/>} sx={{ color: "white"}}>
+                </Button>
+              </MLink>
+              <MLink target="_blank" href='mailto: ng@ng.com'>
+                <Button variant="outlined" size="large" startIcon={<EmailIcon/>} sx={{ color: "white"}}>
+                </Button>
+              </MLink>
+          </Stack>  
+          <Stack direction="row" justifyContent="flex-end" alignItems="center">
+            <Link to="/admin">
+                <Button variant="outlined" size="small"  onClick={props.onFinished} sx={{ color: "white"}}>
+                  {props.text}
+                  </Button>   
+                </Link>   
+          </Stack>    
         </Toolbar>
+
       </AppBar>
     </React.Fragment>
   );
